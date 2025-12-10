@@ -39,21 +39,24 @@ export default function ProjectAnnouncement() {
               </p>
             </div>
             <div className="bg-white rounded-lg p-4 sm:p-6 border-2 border-gray-200 shadow-inner">
-              <pre className="text-xs sm:text-sm text-gray-900 font-mono whitespace-pre-wrap break-words overflow-x-auto leading-relaxed">
-                {`╔════════════════════════════════════╗
-║   CẢM ƠN BẠN ĐÃ NUÔI TÔI!      ║
-╠════════════════════════════════════╣
-║                                    ║
-║  Ngày: 08/12/2025                 ║
-║  Số tiền: 50,000 VNĐ              ║
-║  Mã giao dịch: [Mã của bạn]      ║
-║                                    ║
-║  Cảm ơn bạn đã tin tưởng và       ║
-║  ủng hộ!                           ║
-║  Tôi sẽ cập nhật sao kê minh bạch. ║
-║                                    ║
-╚════════════════════════════════════╝`}
-              </pre>
+              <div className="border-2 border-gray-800 font-mono text-xs sm:text-sm text-gray-900">
+                {/* Header */}
+                <div className="border-b-2 border-gray-800 py-2 px-3 text-center font-bold bg-gray-50">
+                  CẢM ƠN BẠN ĐÃ NUÔI TÔI!
+                </div>
+                {/* Content */}
+                <div className="p-3 space-y-1">
+                  <div className="h-3"></div>
+                  <div className="px-1">Ngày: 08/12/2025</div>
+                  <div className="px-1">Số tiền: 50,000 VNĐ</div>
+                  <div className="px-1">Mã giao dịch: [Mã của bạn]</div>
+                  <div className="h-3"></div>
+                  <div className="px-1">Cảm ơn bạn đã tin tưởng và</div>
+                  <div className="px-1">ủng hộ!</div>
+                  <div className="px-1">Tôi sẽ cập nhật sao kê minh bạch.</div>
+                  <div className="h-3"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
