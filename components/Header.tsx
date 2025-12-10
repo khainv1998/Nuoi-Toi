@@ -16,7 +16,7 @@ export default function Header() {
           <span className="animate-bounce-slow text-6xl sm:text-7xl lg:text-8xl">
             🌱
           </span>
-          <span className="text-gradient drop-shadow-sm">
+          <span className="brand-highlight drop-shadow-sm text-7xl sm:text-8xl lg:text-9xl">
             NUÔI TÔI
           </span>
           <span className="animate-bounce-slow text-6xl sm:text-7xl lg:text-8xl" style={{ animationDelay: '0.5s' }}>
@@ -28,14 +28,17 @@ export default function Header() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          HÃY NUÔI TÔI.
+          <span className="brand-highlight">HÃY NUÔI TÔI.</span>
         </p>
         <p
           className="text-lg sm:text-xl lg:text-2xl text-gray-600 font-medium max-w-2xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Tôi hứa sao kê đầy đủ! 💯 (Uy tín hơn cả người yêu cũ của bạn)
+          Tôi hứa sao kê đầy đủ! 💯 <br className="hidden sm:block my-4" />
+          <span className="block mt-4 text-xl sm:text-2xl lg:text-3xl font-black text-indigo-600 bg-indigo-50/80 px-6 py-3 rounded-full shadow-md transform hover:scale-105 transition-all duration-300 border border-indigo-200 inline-block">
+            ✨ Uy tín hơn cả người yêu cũ của bạn ✨
+          </span>
         </p>
       </div>
     </div>

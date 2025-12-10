@@ -7,7 +7,7 @@ import FeatureCards from "@/components/FeatureCards";
 import Header from "@/components/Header";
 import HeartMessage from "@/components/HeartMessage";
 import ProjectAnnouncement from "@/components/ProjectAnnouncement";
-import Sprint1 from "@/components/Sprint1";
+import CamKet from "@/components/CamKet";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="max-w-screen-2xl mx-auto">
         <Header />
         <ProjectAnnouncement />
-        <Sprint1 />
+        <CamKet />
         <FeatureCards />
         <Commitments />
         <Comparison />

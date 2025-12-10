@@ -31,7 +31,7 @@ export default function FeatureCards() {
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800"
           data-aos="fade-up"
         >
-          🎯 Tại Sao Nên <span className="text-gradient">Nuôi Tôi?</span>
+          🎯 Tại Sao Nên <span className="brand-highlight">Nuôi Tôi?</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (

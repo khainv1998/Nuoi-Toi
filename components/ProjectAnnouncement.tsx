@@ -6,9 +6,9 @@ export default function ProjectAnnouncement() {
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 text-gray-800"
           data-aos="fade-up"
         >
-          🚀 Dự Án <span className="text-gradient">Nuôi Tôi</span> Chính Thức
+          🚀 Dự Án <span className="brand-highlight">Nuôi Tôi</span> Chính Thức
         </h2>
-        
+
         <div
           className="glass-panel rounded-3xl p-8 lg:p-12"
           data-aos="fade-up"
@@ -18,7 +18,7 @@ export default function ProjectAnnouncement() {
             Bắt đầu từ ngày mai –{" "}
             <strong className="text-indigo-600">08/12/2025</strong>, tôi xin
             phép chính thức thành lập{" "}
-            <strong className="text-indigo-600">Dự án Nuôi Tôi</strong>.
+            <strong className="brand-highlight">Dự án Nuôi Tôi</strong>.
           </p>
           <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed break-words font-medium">
             Mỗi tháng, bạn chỉ cần đóng góp{" "}
