@@ -1,21 +1,31 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import AOSProvider from "@/components/AOSProvider";
+import type { Metadata } from "next";
+import { Outfit, Pacifico, Space_Mono } from "next/font/google";
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
   subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-space-mono",
+  display: "swap",
+});
+
+const pacifico = Pacifico({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-pacifico",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Nuôi Tôi - Minh Bạch 100% (Thật Đấy!)",
-  description: "Hãy nuôi tôi. Tôi hứa sao kê đầy đủ! 💯",
+  title: "Nuôi Tôi - Dự Án Minh Bạch Nhất Vũ Trụ",
+  description: "Web app xin tiền donate với sao kê realtime, minh bạch 300%",
 };
 
 export default function RootLayout({
@@ -25,9 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} ${spaceMono.variable} ${pacifico.variable} antialiased`}>
         <AOSProvider>{children}</AOSProvider>
       </body>
     </html>

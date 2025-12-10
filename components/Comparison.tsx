@@ -1,73 +1,63 @@
 export default function Comparison() {
-  const others = [
-    "Sao kê sau 3 năm (hoặc không bao giờ)",
-    "File Excel blur mờ như ảnh ma",
-    'Số liệu "làm tròn" theo kiểu 1 + 1 = 3',
-    "Block người hỏi nhanh như chớp",
-  ];
-
-  const nuoiToi = [
-    "Sao kê trước khi tiêu (để anh chị duyệt)",
-    "File Excel 4K Ultra HD, có chữ ký điện tử",
-    "Số liệu chính xác đến từng đồng",
-    "Trả lời inbox nhanh hơn cả chatbot",
-  ];
-
   return (
-    <section className="w-full py-12 px-4 sm:py-16 sm:px-6 lg:py-20 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full py-12 px-4 sm:px-6 lg:py-20">
+      <div className="max-w-6xl mx-auto">
         <h2
-          className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800"
           data-aos="fade-up"
         >
-          💰 So Sánh Với &quot;Người Khác&quot;
+          ⚖️ So Sánh <span className="text-gradient">Cực Gắt</span>
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-          {/* Người Khác */}
-          <div
-            className="bg-gradient-to-br from-red-100 to-red-200 rounded-2xl p-6 sm:p-8 border-2 border-red-400 shadow-lg"
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Other Streamers */}
+          <div 
+            className="glass-panel p-8 rounded-3xl border-l-8 border-red-400"
             data-aos="fade-right"
-            data-aos-delay="100"
           >
-            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2 text-gray-900">
-              <span>❌</span>
-              <span>Người Khác:</span>
+            <h3 className="text-2xl font-bold mb-6 text-red-500 flex items-center gap-2">
+              <span className="text-3xl">❌</span> Các Streamer Khác
             </h3>
-            <ul className="space-y-3 sm:space-y-4">
-              {others.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-red-700 text-lg sm:text-xl flex-shrink-0 font-bold">
-                    ❌
-                  </span>
-                  <span className="text-sm sm:text-base text-gray-900 break-words font-medium">
-                    {item}
-                  </span>
-                </li>
-              ))}
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-gray-600">
+                <span className="text-red-400 mt-1">⛔</span>
+                <span>Donate xong là mất hút, không biết tiền đi đâu.</span>
+              </li>
+              <li className="flex items-start gap-3 text-gray-600">
+                <span className="text-red-400 mt-1">⛔</span>
+                <span>Sao kê bằng Excel "tự chế".</span>
+              </li>
+              <li className="flex items-start gap-3 text-gray-600">
+                <span className="text-red-400 mt-1">⛔</span>
+                <span>Mua nhà, mua xe, flex ầm ầm.</span>
+              </li>
             </ul>
           </div>
 
           {/* Nuôi Tôi */}
-          <div
-            className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-6 sm:p-8 border-2 border-green-400 shadow-lg"
+          <div 
+            className="glass-panel p-8 rounded-3xl border-l-8 border-green-400 relative overflow-hidden"
             data-aos="fade-left"
-            data-aos-delay="100"
           >
-            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2 text-gray-900">
-              <span>✅</span>
-              <span>Nuôi Tôi:</span>
+            <div className="absolute top-0 right-0 bg-green-400 text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+              KHUYÊN DÙNG
+            </div>
+            <h3 className="text-2xl font-bold mb-6 text-green-600 flex items-center gap-2">
+              <span className="text-3xl">✅</span> Nuôi Tôi
             </h3>
-            <ul className="space-y-3 sm:space-y-4">
-              {nuoiToi.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-green-700 text-lg sm:text-xl flex-shrink-0 font-bold">
-                    ✅
-                  </span>
-                  <span className="text-sm sm:text-base text-gray-900 break-words font-medium">
-                    {item}
-                  </span>
-                </li>
-              ))}
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-gray-700 font-medium">
+                <span className="text-green-500 mt-1">✨</span>
+                <span>Donate xong có email cảm ơn tự động.</span>
+              </li>
+              <li className="flex items-start gap-3 text-gray-700 font-medium">
+                <span className="text-green-500 mt-1">✨</span>
+                <span>Sao kê realtime từ ngân hàng (không fake được).</span>
+              </li>
+              <li className="flex items-start gap-3 text-gray-700 font-medium">
+                <span className="text-green-500 mt-1">✨</span>
+                <span>Vẫn nghèo, vẫn ăn mì tôm (có video chứng minh).</span>
+              </li>
             </ul>
           </div>
         </div>

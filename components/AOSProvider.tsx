@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import AOS from "aos";
+import { useEffect } from "react";
 
 export default function AOSProvider({
   children,
@@ -10,7 +10,7 @@ export default function AOSProvider({
 }) {
   useEffect(() => {
     AOS.init({
-      duration: 600, // Reduced from 800ms (25% faster)
+      duration: 800, // Increased to 800ms (slower)
       delay: 50,
       once: false, // Allow animations to repeat on scroll
       offset: 100,

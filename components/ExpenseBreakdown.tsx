@@ -33,36 +33,36 @@ export default function ExpenseBreakdown() {
   ];
 
   return (
-    <section className="w-full py-12 px-4 sm:py-16 sm:px-6 lg:py-20 bg-gradient-to-br from-blue-100 via-blue-200 to-cyan-200">
+    <section className="w-full py-12 px-4 sm:px-6 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <h2
-          className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800"
           data-aos="fade-up"
         >
-          📈 Tôi Sẽ Dùng Tiền Vào Đâu?
+          📈 Tôi Sẽ Dùng Tiền <span className="text-gradient">Vào Đâu?</span>
         </h2>
-        <ul className="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {expenses.map((expense, index) => (
-            <li
+            <div
               key={index}
-              className="flex items-start gap-3 sm:gap-4"
-              data-aos="fade-right"
+              className="glass-panel p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-up"
               data-aos-delay={100 + index * 100}
             >
-              <span className="text-2xl sm:text-3xl flex-shrink-0">✅</span>
-              <div className="flex-1">
-                <span className="text-lg sm:text-xl font-bold text-gray-900">
-                  {expense.percentage} - {expense.category}
-                </span>
-                <span className="text-sm sm:text-base text-gray-800 block mt-1 break-words font-medium">
-                  ({expense.description})
-                </span>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="text-3xl font-black text-indigo-500">{expense.percentage}</span>
+                <h3 className="text-xl font-bold text-gray-800">{expense.category}</h3>
               </div>
-            </li>
+              <p className="text-gray-600 font-medium">
+                {expense.description}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
+
         <p
-          className="text-center text-base sm:text-lg text-gray-900 font-semibold"
+          className="text-center text-lg sm:text-xl text-gray-700 font-bold bg-white/40 py-4 px-8 rounded-full inline-block mx-auto backdrop-blur-sm border border-white/50"
           data-aos="fade-up"
           data-aos-delay="300"
         >

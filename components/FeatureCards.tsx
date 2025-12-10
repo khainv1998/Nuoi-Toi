@@ -25,29 +25,29 @@ export default function FeatureCards() {
   ];
 
   return (
-    <section className="w-full py-12 px-4 sm:py-16 sm:px-6 lg:py-20 bg-white">
+    <section className="w-full py-12 px-4 sm:px-6 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <h2
-          className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800"
           data-aos="fade-up"
         >
-          🎯 Tại Sao Nên Nuôi Tôi?
+          🎯 Tại Sao Nên <span className="text-gradient">Nuôi Tôi?</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow"
-              data-aos="zoom-in"
-              data-aos-delay={100 + index * 100}
+              className="glass-panel rounded-3xl p-8 hover:-translate-y-2 transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <div className="text-4xl sm:text-5xl mb-4 text-center">
+              <div className="text-5xl sm:text-6xl mb-6 text-center transform hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 text-center text-gray-900">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center text-gray-900">
                 {feature.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-800 text-center break-words font-medium">
+              <p className="text-base text-gray-600 text-center font-medium leading-relaxed">
                 {feature.description}
               </p>
             </div>
